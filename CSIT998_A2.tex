@@ -61,7 +61,7 @@ Banin Shrestha\\
 
 \maketitle {}
 
-\abstract This project aims to provide a cloud based platform to streamline the development process of managing and tracking Machine learning experiments. This platform will provide developers and researchers with robust tools for storing deep learning model files, tracking training results, and logging key metrics. Currently ML engineers and researchers do the model experiment tracking and model storage manually and also often on their local device, which is hard to share and explain in collaboration, hence decreasing productivity. This platform will also offer advanced data visualization, customizable user interfaces, and resource management tools, including integrated GPU/CPU usage tracking. Collaboration features will allow teams to securely share results and insights.
+\abstract Machine learning (ML) development often suffers from inefficient experiment tracking and limited collaboration due to manual processes and local storage solutions. This project aims to provide a cloud-based platform to streamline the development process of managing and tracking Machine learning experiments. The proposed system offers comprehensive tools for storing deep learning model files, real-time tracking of training results, and automated logging of key performance metrics. This platform will also offer advanced data visualization, customizable user interfaces, and resource management tools, including integrated GPU/CPU usage tracking, significantly enhances productivity in ML workflows. Furthermore, robust collaboration features enable secure sharing of results and insights among team members. This innovative solution addresses the current challenges faced by ML engineers and researchers, lead to more efficient, transparent, and collaborative development processes in the field of machine learning.
 
 \section{\tb{Introduction}}
 
@@ -279,184 +279,213 @@ In large-scale machine learning projects, teamwork is very important. How to eff
 
 \section{Project Team}
 
-Our team consists of four individuals with diverse backgrounds and skills:
+Our team consists of five individuals with diverse backgrounds and skills. Based on their expertise and project needs, we have distributed the work as follows:
 
 \begin{enumerate}
-    \item \textbf{Affan Mehmood:} Experienced developer with a strong background in machine learning and programming. Responsible for implementing core ML experiment tracking features and data analysis tools.
-    
-    \item \textbf{Zifan Zhang:} Developer with skills in frontend programming. In charge of React.js implementation and user interface design.
-    
-    \item \textbf{Wenyu Fang:} Team leader without a strong technical background, but eager to learn and contribute to the project management and documentation aspects.
-    
-    \item \textbf{Farjad Akbar:} Data scientist with experience in data analysis and visualization. Responsible for designing and implementing data visualization features and assisting with backend development.
+    \item \textbf{Affan Mehmood:} Experienced developer with a strong background in machine learning and programming.
+    \begin{itemize}
+        \item Implement ML model storage and retrieval system (80 hours)
+        \item Develop core API endpoints for ML experiments (40 hours)
+        \item Assist with resource usage monitoring implementation (30 hours)
+        \item Design system architecture (30 hours)
+        \item Total: 180 hours
+    \end{itemize}
+
+    \item \textbf{Zifan Zhang:} Developer with skills in frontend programming.
+    \begin{itemize}
+        \item Lead frontend development (React.js) (60 hours)
+        \item Create advanced visualization components for metrics tracking (60 hours)
+        \item Implement user dashboard (40 hours)
+        \item Total: 160 hours
+    \end{itemize}
+
+    \item \textbf{Wenyu Fang:} Team leader with focus on project management and frontend development.
+    \begin{itemize}
+        \item Manage project timeline and coordination (40 hours)
+        \item Develop user documentation (30 hours)
+        \item Implement basic frontend components (React.js) (50 hours)
+        \item Design and implement user interface (40 hours)
+        \item Total: 160 hours
+    \end{itemize}
+
+    \item \textbf{Farjad Akbar:} Data scientist with experience in data analysis and visualization.
+    \begin{itemize}
+        \item Design metrics logging system (40 hours)
+        \item Implement real-time data streaming (60 hours)
+        \item Create visualization components for resource usage (40 hours)
+        \item Develop resource optimization suggestions (20 hours)
+        \item Total: 160 hours
+    \end{itemize}
+
+    \item \textbf{Banin Shrestha:} Developer with strong programming background and data science experience.
+    \begin{itemize}
+        \item Set up FastAPI server and backend infrastructure (40 hours)
+        \item Integrate backend with database (40 hours)
+        \item Implement user management system (40 hours)
+        \item Implement data encryption and access control (40 hours)
+        \item Assist with core API development and optimization (40 hours)
+        \item Total: 200 hours
+    \end{itemize}
 \end{enumerate}
+
+\textbf{Additional Shared Responsibilities:}
+\begin{itemize}
+    \item All team members will participate in regular meetings, code reviews, and testing phases.
+    \item The team will collectively handle the setup of the development environment (20 hours).
+    \item Security testing will be a shared responsibility, with each member focusing on their area of expertise (30 hours distributed).
+    \item Design and implementation of sharing mechanisms will be a collaborative effort between Zifan, Wenyu, and Banin (20 hours).
+\end{itemize}
+
+Total Allocated Hours: 880 + 70 (shared) = 950 hours
 
 
 \section{Plan and Timeline}
-The tasks are scheduled based on each team member's strengths:
-
-\begin{itemize}
-    \item Weeks 1-2: Zifan will set up the basic frontend structure, while Affan begins work on the core ML features.
-    \item Weeks 3-4: Affan continues with ML implementation, Farjad starts on data visualization features.
-    \item Weeks 5-6: Farjad focuses on backend development with assistance from Affan.
-    \item Weeks 7-8: All team members collaborate on integration and testing, with Wenyu taking the lead on documentation.
-    \item Weeks 9-10: Final refinements, Wenyu compiles the final documentation, and the team prepares for launch.
-\end{itemize}
-
-
-\subsection{Work Breakdown Structure (WBS)}
+This section outlines our 10-week project plan for developing the ML Insights Hub. The timeline is designed to ensure a logical progression of development tasks, focusing on key milestones and deliverables.
 
 \begin{enumerate}
-    \item Develop Cloud-Based Platform for ML Experiment Management
+    \item \textbf{Weeks 1-2: Proof of Concept (POC)}
+    \begin{itemize}
+        \item Develop a basic prototype of the ML experiment tracking system
+        \item Implement core features to demonstrate the platform's potential
+        \item Gather feedback and refine the project requirements
+        \item Conduct initial performance tests to identify potential problems
+    \end{itemize}
+
+    \item \textbf{Weeks 3-4: Database Schema, REST APIs, and User Authentication}
+    \begin{itemize}
+        \item Design and implement the database schema for storing ML experiments and metrics
+        \item Develop REST APIs for interacting with the backend services
+        \item Set up user authentication and authorization system
+        \item Begin integration of the POC with the new backend infrastructure
+    \end{itemize}
+
+    \item \textbf{Weeks 5-6: Dashboard and Analytics Refinement}
+    \begin{itemize}
+        \item Design and implement an intuitive user dashboard
+        \item Develop advanced analytics features for ML experiment insights
+        \item Integrate real-time data streaming for live experiment tracking
+        \item Conduct usability testing and gather user feedback
+    \end{itemize}
+
+    \item \textbf{Weeks 7-8: Integration and Testing}
+    \begin{itemize}
+        \item Integrate all components of the system (frontend, backend, ML features)
+        \item Conduct comprehensive system testing, including stress tests and security audits
+        \item Optimize performance based on testing results
+        \item Begin preparation of user documentation and guides
+    \end{itemize}
+
+    \item \textbf{Weeks 9-10: Refinement and Launch Preparation}
+    \begin{itemize}
+        \item Make final refinements based on all testing results and user feedback
+        \item Complete and review all documentation
+        \item Conduct final end-to-end testing of the entire platform
+        \item Prepare for launch
+    \end{itemize}
+\end{enumerate}
+
+
+subsection{Work Breakdown Structure (WBS) with Time Estimates}
+
+\begin{enumerate}
+    \item Develop Cloud-Based Platform for ML Experiment Management (Total: 320 hours)
     \begin{enumerate}
-        \item Set up development environment
+        \item Set up development environment (20 hours)
         \begin{enumerate}
-            \item Install necessary tools and frameworks
-            \item Set up version control system
+            \item Install necessary tools and frameworks (8 hours)
+            \item Set up version control system (12 hours)
         \end{enumerate}
-        \item Design system architecture
+        \item Design system architecture (40 hours)
         \begin{enumerate}
-            \item Create high-level system design
-            \item Define component interactions
+            \item Create high-level system design (24 hours)
+            \item Define component interactions (16 hours)
         \end{enumerate}
-        \item Develop frontend (React.js)
+        \item Develop frontend (React.js) (80 hours)
         \begin{enumerate}
-            \item Create UI conponents
-            \item Implement basic components
-            \item Develop user dashboard
+            \item Create UI components (30 hours)
+            \item Implement basic components (20 hours)
+            \item Develop user dashboard (30 hours)
         \end{enumerate}
-        \item Develop backend (FastAPI)
+        \item Develop backend (FastAPI) (100 hours)
         \begin{enumerate}
-            \item Set up FastAPI server
-            \item Implement core API endpoints
-            \item Integrate with database
+            \item Set up FastAPI server (20 hours)
+            \item Implement core API endpoints (40 hours)
+            \item Integrate with database (40 hours)
+        \end{enumerate}
+        \item Implement ML model storage and retrieval system (80 hours)
+        \begin{enumerate}
+            \item Design storage architecture (20 hours)
+            \item Implement model upload functionality (30 hours)
+            \item Develop model retrieval system (30 hours)
         \end{enumerate}
     \end{enumerate}
 
-    \item Implement Robust ML Model Storage and Retrieval System
+    \item Create Real-Time Metrics Tracking and Visualization Tools (Total: 200 hours)
     \begin{enumerate}
-        \item Set up cloud storage  AWS S3
+        \item Design metrics logging system (40 hours)
         \begin{enumerate}
-            \item Configure S3 buckets
-            \item Implement access controls
+            \item Define key metrics to track (16 hours)
+            \item Create data structures for metrics (24 hours)
         \end{enumerate}
-        \item Design database schema for metadata
+        \item Implement real-time data streaming (60 hours)
         \begin{enumerate}
-            \item Define tables and relationships
-            \item Optimize for query performance
+            \item Set up WebSocket connections (20 hours)
+            \item Develop server-side streaming logic (40 hours)
         \end{enumerate}
-        \item Develop model upload functionality
+        \item Create visualization components (100 hours)
         \begin{enumerate}
-            \item Create file upload interface
-            \item Implement server-side storage logic
-        \end{enumerate}
-        \item Implement model retrieval system
-        \begin{enumerate}
-            \item Develop search functionality
-            \item Create download mechanism
+            \item Implement charts and graphs (60 hours)
+            \item Develop interactive dashboards (40 hours)
         \end{enumerate}
     \end{enumerate}
 
-    \item Create Real-Time Metrics Tracking and Visualization Tools
+    \item Implement Resource Usage Monitoring and Optimization (Total: 120 hours)
     \begin{enumerate}
-        \item Design metrics logging system
+        \item Develop resource tracking system (60 hours)
         \begin{enumerate}
-            \item Define key metrics to track
-            \item Create data structures for metrics
+            \item Implement GPU/CPU usage monitoring (30 hours)
+            \item Create memory usage tracking (30 hours)
         \end{enumerate}
-        \item Implement real-time data streaming
+        \item Design resource visualization tools (40 hours)
         \begin{enumerate}
-            \item Set up WebSocket connections
-            \item Develop server-side streaming logic
+            \item Create real-time usage graphs (20 hours)
+            \item Implement historical usage views (20 hours)
         \end{enumerate}
-        \item Create visualization components
-        \begin{enumerate}
-            \item Implement charts and graphs
-            \item Develop interactive dashboards
-        \end{enumerate}
-        \item Integrate metrics tracking with ML workflows
-        \begin{enumerate}
-            \item Create hooks for popular ML frameworks
-            \item Implement automatic metric logging
-        \end{enumerate}
+        \item Develop resource optimization suggestions (20 hours)
     \end{enumerate}
 
-    \item Implement Resource Usage Monitoring and Optimization
+    \item Develop Collaboration and Sharing Features (Total: 100 hours)
     \begin{enumerate}
-        \item Develop resource tracking system
+        \item Implement user management system (40 hours)
         \begin{enumerate}
-            \item Implement GPU/CPU usage monitoring
-            \item Create memory usage tracking
+            \item Create user roles and permissions (20 hours)
+            \item Develop user authentication (20 hours)
         \end{enumerate}
-        \item Design resource visualization tools
+        \item Design sharing mechanisms (40 hours)
         \begin{enumerate}
-            \item Create real-time usage graphs
-            \item Implement historical usage views
+            \item Implement project sharing functionality (20 hours)
+            \item Create team collaboration tools (20 hours)
         \end{enumerate}
-        \item Develop resource optimization suggestions
-        \begin{enumerate}
-            \item Implement usage analysis algorithms
-            \item Create optimization recommendation system
-        \end{enumerate}
+        \item Develop notification system (20 hours)
     \end{enumerate}
 
-    \item Develop Collaboration and Sharing Features
+    \item Ensure Platform Security and Data Privacy (Total: 80 hours)
     \begin{enumerate}
-        \item Implement user management system
-        \begin{enumerate}
-            \item Create user roles and permissions
-            \item Develop user authentication
-        \end{enumerate}
-        \item Design sharing mechanisms
-        \begin{enumerate}
-            \item Implement project sharing functionality
-            \item Create team collaboration tools
-        \end{enumerate}
-        \item Develop notification system
-        \begin{enumerate}
-            \item Implement real-time notifications
-            \item Create email notification system
-        \end{enumerate}
+        \item Implement data encryption (30 hours)
+        \item Develop access control system (30 hours)
+        \item Conduct security testing (20 hours)
     \end{enumerate}
 
-    \item Ensure Platform Security and Data Privacy
+    \item Create User-Friendly Interface and Documentation (Total: 100 hours)
     \begin{enumerate}
-        \item Implement data encryption
-        \begin{enumerate}
-            \item Encrypt data at rest
-            \item Implement secure data transmission
-        \end{enumerate}
-        \item Develop access control system
-        \begin{enumerate}
-            \item Implement role-based access control
-            \item Create audit logging system
-        \end{enumerate}
-        \item Conduct security testing
-        \begin{enumerate}
-            \item Perform penetration testing
-            \item Conduct security code review
-        \end{enumerate}
-    \end{enumerate}
-
-    \item Create User-Friendly Interface and Documentation
-    \begin{enumerate}
-        \item Refine user interface
-        \begin{enumerate}
-            \item Conduct usability testing
-            \item Implement UI improvements based on feedback
-        \end{enumerate}
-        \item Develop user documentation
-        \begin{enumerate}
-            \item Write user manual
-            \item Create video tutorials
-        \end{enumerate}
-        \item Implement in-app guidance
-        \begin{enumerate}
-            \item Develop tooltips and help text
-            \item Create onboarding tour for new users
-        \end{enumerate}
+        \item Refine user interface (40 hours)
+        \item Develop user documentation (40 hours)
+        \item Implement in-app guidance (20 hours)
     \end{enumerate}
 \end{enumerate}
+
+Total Estimated Time: 920 hours
+\end{artifact}
 
 
 \section{\tb{Outcomes}}
